@@ -1,0 +1,22 @@
+<header class="main-header">
+  <h1 class="main-header__title">
+    <span class="main-header__title--blue">High</span>
+    <span class="main-header__title--orange">Informatica.</span>
+  </h1>
+  <div class="container-menu">
+
+    <nav class="main-header__menu">
+      <ul>
+        <li routerLink="/produtos" ><a>Produtos</a></li>
+        <li routerLink="/carrinho"><a> <i class="fa-solid fa-cart-shopping"></i> Carrinho <span class="badge-carrinho">  {{ carrinhoService.obterCarrinho().length }} </span></a></li>
+        <li routerLink="/contato"><a>Contatos</a></li>
+        <li><a><i class="fa-brands fa-linkedin"></i></a></li>
+        <li><a><i class="fa-brands fa-twitch"></i></a></li>
+        <li><a><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a><i class="fa-brands fa-instagram"></i></a></li>
+      </ul>
+    </nav>
+   <app-barra-pesquisa></app-barra-pesquisa>
+  </div>
+  </header>
